@@ -1,0 +1,62 @@
+{
+  "name": "IRole",
+  "fields": [
+    {
+      "fieldName": "roleName",
+      "fieldType": "String",
+      "javadoc": "角色名"
+    },
+    {
+      "fieldName": "remark",
+      "fieldType": "String",
+      "javadoc": "备注"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "LocalDate",
+      "javadoc": "创建时间"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "LocalDate",
+      "javadoc": "修改时间"
+    },
+    {
+      "fieldName": "createUserId",
+      "fieldType": "Long",
+      "javadoc": "创建人id"
+    },
+    {
+      "fieldName": "updateUserId",
+      "fieldType": "Long",
+      "javadoc": "更新人id"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "iUserRole",
+      "otherEntityRelationshipName": "role",
+      "relationshipName": "users",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "iRoleMenu",
+      "otherEntityRelationshipName": "role",
+      "relationshipName": "menus",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "角色表",
+  "entityTableName": "i_role",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211231061525"
+}

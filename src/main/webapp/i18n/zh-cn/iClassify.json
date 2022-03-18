@@ -1,0 +1,33 @@
+{
+  "blogNewApp": {
+    "iClassify": {
+      "home": {
+        "title": "I Classifies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 I Classify",
+        "createOrEditLabel": "创建或编辑 I Classify",
+        "notFound": "No I Classifies found"
+      },
+      "created": "I Classify {{ param }} 创建成功",
+      "updated": "I Classify {{ param }} 更新成功",
+      "deleted": "I Classify {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 I Classify {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "I Classify"
+      },
+      "id": "ID",
+      "name": "Name",
+      "alias": "Alias",
+      "description": "Description",
+      "parentId": "Parent Id",
+      "help": {
+        "name": "分类名称",
+        "alias": "别名",
+        "description": "描述",
+        "parentId": "父ID"
+      }
+    }
+  }
+}

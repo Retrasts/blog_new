@@ -1,0 +1,40 @@
+{
+  "blogNewApp": {
+    "iMenu": {
+      "home": {
+        "title": "I Menus",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 I Menu",
+        "createOrEditLabel": "创建或编辑 I Menu",
+        "notFound": "No I Menus found"
+      },
+      "created": "I Menu {{ param }} 创建成功",
+      "updated": "I Menu {{ param }} 更新成功",
+      "deleted": "I Menu {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 I Menu {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "I Menu"
+      },
+      "id": "ID",
+      "url": "Url",
+      "menuName": "Menu Name",
+      "parentId": "Parent Id",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "createUserId": "Create User Id",
+      "updateUserId": "Update User Id",
+      "roles": "Roles",
+      "help": {
+        "url": "菜单路由",
+        "menuName": "菜单名字",
+        "parentId": "父级菜单id",
+        "createTime": "创建时间",
+        "updateTime": "修改时间",
+        "createUserId": "创建人id",
+        "updateUserId": "更新人id"
+      }
+    }
+  }
+}

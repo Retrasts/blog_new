@@ -1,0 +1,94 @@
+{
+  "name": "IUser",
+  "fields": [
+    {
+      "fieldName": "ip",
+      "fieldType": "String",
+      "javadoc": "IP地址"
+    },
+    {
+      "fieldName": "username",
+      "fieldType": "String",
+      "javadoc": "用户名"
+    },
+    {
+      "fieldName": "nikename",
+      "fieldType": "String",
+      "javadoc": "昵称"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String",
+      "javadoc": "密码"
+    },
+    {
+      "fieldName": "sex",
+      "fieldType": "Integer",
+      "javadoc": "性别"
+    },
+    {
+      "fieldName": "emaile",
+      "fieldType": "String",
+      "javadoc": "邮箱"
+    },
+    {
+      "fieldName": "avatar",
+      "fieldType": "String",
+      "javadoc": "头像"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "LocalDate",
+      "javadoc": "创建时间"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "LocalDate",
+      "javadoc": "修改时间"
+    },
+    {
+      "fieldName": "createUserId",
+      "fieldType": "Long",
+      "javadoc": "创建人id"
+    },
+    {
+      "fieldName": "updateUserId",
+      "fieldType": "Long",
+      "javadoc": "更新人id"
+    },
+    {
+      "fieldName": "birthday",
+      "fieldType": "LocalDate",
+      "javadoc": "生日"
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String",
+      "javadoc": "公司"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "Integer",
+      "javadoc": "手机号"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "iUserRole",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "roles"
+    }
+  ],
+  "javadoc": "用户表",
+  "entityTableName": "i_user",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211231061524"
+}

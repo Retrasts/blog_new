@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "iUser": "I User",
+        "iRole": "I Role",
+        "iUserRole": "I User Role",
+        "iMenu": "I Menu",
+        "iRoleMenu": "I Role Menu",
+        "iBlog": "I Blog",
+        "iComment": "I Comment",
+        "iClassify": "I Classify",
+        "iLabel": "I Label",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

@@ -1,0 +1,33 @@
+{
+  "blogNewApp": {
+    "iLabel": {
+      "home": {
+        "title": "I Labels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new I Label",
+        "createOrEditLabel": "Create or edit a I Label",
+        "notFound": "No I Labels found"
+      },
+      "created": "A new I Label is created with identifier {{ param }}",
+      "updated": "A I Label is updated with identifier {{ param }}",
+      "deleted": "A I Label is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete I Label {{ id }}?"
+      },
+      "detail": {
+        "title": "I Label"
+      },
+      "id": "ID",
+      "name": "Name",
+      "alias": "Alias",
+      "description": "Description",
+      "parentId": "Parent Id",
+      "help": {
+        "name": "分类名称",
+        "alias": "别名",
+        "description": "描述",
+        "parentId": "父ID"
+      }
+    }
+  }
+}

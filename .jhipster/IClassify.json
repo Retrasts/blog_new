@@ -1,0 +1,37 @@
+{
+  "name": "IClassify",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "分类名称"
+    },
+    {
+      "fieldName": "alias",
+      "fieldType": "String",
+      "javadoc": "别名"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "javadoc": "描述"
+    },
+    {
+      "fieldName": "parentId",
+      "fieldType": "Long",
+      "javadoc": "父ID"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "分类管理",
+  "entityTableName": "i_classify",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220318032840"
+}

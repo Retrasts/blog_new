@@ -1,0 +1,47 @@
+{
+  "name": "IComment",
+  "fields": [
+    {
+      "fieldName": "createTime",
+      "fieldType": "LocalDate",
+      "javadoc": "发布日期"
+    },
+    {
+      "fieldName": "createUserId",
+      "fieldType": "Long",
+      "javadoc": "发布用户ID"
+    },
+    {
+      "fieldName": "blogId",
+      "fieldType": "Long",
+      "javadoc": "文章ID"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String",
+      "javadoc": "内容"
+    },
+    {
+      "fieldName": "likes",
+      "fieldType": "Long",
+      "javadoc": "点赞数"
+    },
+    {
+      "fieldName": "parentId",
+      "fieldType": "Long",
+      "javadoc": "父级菜单id"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "评论管理",
+  "entityTableName": "i_comment",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220318032839"
+}

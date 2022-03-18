@@ -1,12 +1,21 @@
 {
   "global": {
-    "title": "Blog_new",
+    "title": "fz的博客",
     "browsehappy": "您目前使用<strong>过于老旧</strong>的浏览器, 建议您<a href=\"http://browsehappy.com/?locale=en\">升级浏览器</a>让您有更佳的上网体验.",
     "menu": {
       "home": "首页",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "数据",
+        "iUser": "I User",
+        "iRole": "I Role",
+        "iUserRole": "I User Role",
+        "iMenu": "I Menu",
+        "iRoleMenu": "I Role Menu",
+        "iBlog": "I Blog",
+        "iComment": "I Comment",
+        "iClassify": "I Classify",
+        "iLabel": "I Label",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

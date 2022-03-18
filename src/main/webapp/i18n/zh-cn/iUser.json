@@ -1,0 +1,54 @@
+{
+  "blogNewApp": {
+    "iUser": {
+      "home": {
+        "title": "I Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 I User",
+        "createOrEditLabel": "创建或编辑 I User",
+        "notFound": "No I Users found"
+      },
+      "created": "I User {{ param }} 创建成功",
+      "updated": "I User {{ param }} 更新成功",
+      "deleted": "I User {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 I User {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "I User"
+      },
+      "id": "ID",
+      "ip": "Ip",
+      "username": "Username",
+      "nikename": "Nikename",
+      "password": "Password",
+      "sex": "Sex",
+      "emaile": "Emaile",
+      "avatar": "Avatar",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "createUserId": "Create User Id",
+      "updateUserId": "Update User Id",
+      "birthday": "Birthday",
+      "company": "Company",
+      "phone": "Phone",
+      "roles": "Roles",
+      "help": {
+        "ip": "IP地址",
+        "username": "用户名",
+        "nikename": "昵称",
+        "password": "密码",
+        "sex": "性别",
+        "emaile": "邮箱",
+        "avatar": "头像",
+        "createTime": "创建时间",
+        "updateTime": "修改时间",
+        "createUserId": "创建人id",
+        "updateUserId": "更新人id",
+        "birthday": "生日",
+        "company": "公司",
+        "phone": "手机号"
+      }
+    }
+  }
+}

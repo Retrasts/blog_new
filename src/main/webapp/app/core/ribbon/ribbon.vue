@@ -1,3 +1,4 @@
+/** * de * * */
 <template>
   <div class="ribbon" v-if="ribbonEnabled">
     <a href="" v-text="$t('global.ribbon.' + ribbonEnv)">{{ ribbonEnv }}</a>

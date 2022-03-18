@@ -1,0 +1,62 @@
+{
+  "name": "IBlog",
+  "fields": [
+    {
+      "fieldName": "createUserId",
+      "fieldType": "Long",
+      "javadoc": "发布用户ID"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "javadoc": "博文标题"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "Long",
+      "javadoc": "标签ID"
+    },
+    {
+      "fieldName": "classify",
+      "fieldType": "Long",
+      "javadoc": "分类ID"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String",
+      "javadoc": "博文内容"
+    },
+    {
+      "fieldName": "likes",
+      "fieldType": "Long",
+      "javadoc": "点赞数"
+    },
+    {
+      "fieldName": "replynumber",
+      "fieldType": "Long",
+      "javadoc": "回复数"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "LocalDate",
+      "javadoc": "发布日期"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "LocalDate",
+      "javadoc": "修改日期"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "博文管理",
+  "entityTableName": "i_blog",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220318032838"
+}

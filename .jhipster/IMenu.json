@@ -1,0 +1,59 @@
+{
+  "name": "IMenu",
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String",
+      "javadoc": "菜单路由"
+    },
+    {
+      "fieldName": "menuName",
+      "fieldType": "String",
+      "javadoc": "菜单名字"
+    },
+    {
+      "fieldName": "parentId",
+      "fieldType": "Long",
+      "javadoc": "父级菜单id"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "LocalDate",
+      "javadoc": "创建时间"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "LocalDate",
+      "javadoc": "修改时间"
+    },
+    {
+      "fieldName": "createUserId",
+      "fieldType": "Long",
+      "javadoc": "创建人id"
+    },
+    {
+      "fieldName": "updateUserId",
+      "fieldType": "Long",
+      "javadoc": "更新人id"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "iRoleMenu",
+      "otherEntityRelationshipName": "menu",
+      "relationshipName": "roles"
+    }
+  ],
+  "javadoc": "菜单表",
+  "entityTableName": "i_menu",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211231061527"
+}

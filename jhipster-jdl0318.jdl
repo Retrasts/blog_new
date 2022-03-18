@@ -1,0 +1,273 @@
+/**
+ * 用户表
+ */
+ entity IUser {
+  	/**
+     * IP地址
+     */
+     ip String,
+     /**
+     * 用户名
+     */
+    username String,
+     /**
+     * 昵称
+     */
+    nikename String,
+    /**
+     * 密码
+     */
+    password String,
+    /**
+     * 性别
+     */
+    sex Integer,
+    /**
+     * 邮箱
+     */
+    emaile String,
+    /**
+     * 头像
+     */
+    avatar String,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+    /**
+     * 生日
+     */
+    birthday LocalDate,
+    /**
+     * 公司
+     */
+    company String,
+     /**
+     * 手机号
+     */
+    phone Integer,
+ }
+ /**
+ * 角色表 
+ */
+ entity IRole {
+	/**
+     * 角色名
+     */
+	roleName String,
+    /**
+     * 备注
+     */
+    remark String,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+ }
+
+/**
+ * 菜单表 
+ */
+entity IMenu {
+ 	/**
+     * 菜单路由
+     */
+	url String,
+     /**
+     * 菜单名字
+     */
+    menuName String,
+     /**
+     * 父级菜单id
+     */
+    parentId Long,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+}
+/**
+ * 博文管理 
+ */
+entity IBlog {
+	/**
+    * 发布用户ID
+    */
+    createUserId Long,
+    /**
+    * 博文标题
+    */
+    title String,
+    /**
+    * 标签ID
+    */
+    label Long,
+    /**
+    * 分类ID
+    */
+    classify Long,
+    /**
+    * 博文内容
+    */
+    content String,
+    /**
+    * 点赞数
+    */
+    likes Long,
+    /**
+    * 回复数
+    */
+    replynumber Long,
+    /**
+    * 发布日期
+    */
+    createTime LocalDate,
+    /**
+     * 修改日期
+     */
+    updateTime LocalDate,
+}
+
+
+/**
+ * 评论管理 
+ */
+entity IComment {
+    /**
+    * 发布日期
+    */
+    createTime LocalDate,
+	/**
+    * 发布用户ID
+    */
+    createUserId Long,
+    /**
+    * 文章ID
+    */
+    blogId Long,
+    /**
+    * 内容
+    */
+    content String,
+    /**
+    * 点赞数
+    */
+    likes Long,
+    /**
+     * 父级菜单id
+     */
+    parentId Long,
+}
+/**
+ * 分类管理 
+ */
+entity IClassify {
+    /**
+    * 分类名称
+    */
+    name String,
+	/**
+    * 别名
+    */
+    alias String,
+    /**
+    * 描述
+    */
+    description String,
+    /**
+    * 父ID
+    */
+    parentId Long,
+}
+/**
+ * 标签管理 
+ */
+entity ILabel {
+    /**
+    * 分类名称
+    */
+    name String,
+	/**
+    * 别名
+    */
+    alias String,
+    /**
+    * 描述
+    */
+    description String,
+    /**
+    * 父ID
+    */
+    parentId Long,
+}
+
+ /**
+ * 用户角色中间表 
+ */
+entity IUserRole
+
+/**
+ * 菜单角色中间表 
+ */
+entity IRoleMenu
+
+relationship OneToOne {
+	IRole{users} to IUserRole{role},
+    IRole{menus} to IRoleMenu{role},
+   
+}
+
+relationship OneToMany {
+	IUser{roles} to IUserRole{user},
+    IMenu{roles} to IRoleMenu{menu},
+    IUser{users} to IBlog{createUserId},
+    IUser{users} to IComment{createUserId},
+    ILabel{label} to IComment{comment},
+}
+
+// 设置分页信息
+paginate IUser, IRole, IBlog, IComment, ILabel with infinite-scroll
+paginate IMenu with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// 设置服务层
+service all with serviceImpl except IUser, IRole, IMenu, IBlog, IComment, ILabel
+

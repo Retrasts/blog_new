@@ -1,0 +1,30 @@
+{
+  "name": "IUserRole",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "iRole",
+      "otherEntityRelationshipName": "users",
+      "relationshipName": "role",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "iUser",
+      "otherEntityRelationshipName": "roles",
+      "relationshipName": "user"
+    }
+  ],
+  "javadoc": "用户角色中间表",
+  "entityTableName": "i_user_role",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211231061526"
+}

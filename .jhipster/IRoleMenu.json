@@ -1,0 +1,30 @@
+{
+  "name": "IRoleMenu",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "iRole",
+      "otherEntityRelationshipName": "menus",
+      "relationshipName": "role",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "iMenu",
+      "otherEntityRelationshipName": "roles",
+      "relationshipName": "menu"
+    }
+  ],
+  "javadoc": "菜单角色中间表",
+  "entityTableName": "i_role_menu",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211231061528"
+}

@@ -1,0 +1,25 @@
+{
+  "blogNewApp": {
+    "iRoleMenu": {
+      "home": {
+        "title": "I Role Menus",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new I Role Menu",
+        "createOrEditLabel": "Create or edit a I Role Menu",
+        "notFound": "No I Role Menus found"
+      },
+      "created": "A new I Role Menu is created with identifier {{ param }}",
+      "updated": "A I Role Menu is updated with identifier {{ param }}",
+      "deleted": "A I Role Menu is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete I Role Menu {{ id }}?"
+      },
+      "detail": {
+        "title": "I Role Menu"
+      },
+      "id": "ID",
+      "role": "Role",
+      "menu": "Menu"
+    }
+  }
+}

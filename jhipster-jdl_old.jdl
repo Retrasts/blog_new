@@ -1,0 +1,126 @@
+/**
+ * 用户表
+ */
+ entity IUser {
+     /**
+     * 用户名
+     */
+    username String,
+    /**
+     * 密码
+     */
+    password String,
+    /**
+     * 性别
+     */
+    sex Integer,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+ }
+ /**
+ * 角色表 
+ */
+ entity IRole {
+	/**
+     * 角色名
+     */
+	roleName String,
+    /**
+     * 备注
+     */
+    remark String,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+ }
+ /**
+ * 用户角色中间表 
+ */
+entity IUserRole
+
+/**
+ * 菜单表 
+ */
+entity IMenu {
+ 	/**
+     * 菜单路由
+     */
+	url String,
+     /**
+     * 菜单名字
+     */
+    menuName String,
+     /**
+     * 父级菜单id
+     */
+    parentId Long,
+    /**
+     * 创建时间
+     */
+    createTime LocalDate,
+    /**
+     * 修改时间
+     */
+    updateTime LocalDate,
+    /**
+     * 创建人id
+     */
+    createUserId Long,
+    /**
+     * 更新人id
+     */
+    updateUserId Long,
+}
+/**
+ * 菜单角色中间表 
+ */
+entity IRoleMenu
+
+relationship OneToOne {
+	IRole{users} to IUserRole{role},
+    IRole{menus} to IRoleMenu{role},
+   
+}
+
+relationship OneToMany {
+	IUser{roles} to IUserRole{user},
+    IMenu{roles} to IRoleMenu{menu},
+}
+
+// 设置分页信息
+paginate IUser, IRole with infinite-scroll
+paginate IMenu with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// 设置服务层
+service all with serviceImpl except IUser, IRole, IMenu
+

@@ -40,6 +40,8 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["zh-cn", "en"],
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["IUser", "IRole", "IUserRole", "IMenu", "IRoleMenu", "IBlog", "IComment", "IClassify", "ILabel"],
+    "lastLiquibaseTimestamp": 1647574121000
   }
 }

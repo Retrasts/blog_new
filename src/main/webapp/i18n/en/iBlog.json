@@ -1,0 +1,43 @@
+{
+  "blogNewApp": {
+    "iBlog": {
+      "home": {
+        "title": "I Blogs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new I Blog",
+        "createOrEditLabel": "Create or edit a I Blog",
+        "notFound": "No I Blogs found"
+      },
+      "created": "A new I Blog is created with identifier {{ param }}",
+      "updated": "A I Blog is updated with identifier {{ param }}",
+      "deleted": "A I Blog is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete I Blog {{ id }}?"
+      },
+      "detail": {
+        "title": "I Blog"
+      },
+      "id": "ID",
+      "createUserId": "Create User Id",
+      "title": "Title",
+      "label": "Label",
+      "classify": "Classify",
+      "content": "Content",
+      "likes": "Likes",
+      "replynumber": "Replynumber",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "help": {
+        "createUserId": "发布用户ID",
+        "title": "博文标题",
+        "label": "标签ID",
+        "classify": "分类ID",
+        "content": "博文内容",
+        "likes": "点赞数",
+        "replynumber": "回复数",
+        "createTime": "发布日期",
+        "updateTime": "修改日期"
+      }
+    }
+  }
+}

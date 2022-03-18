@@ -1,0 +1,39 @@
+{
+  "blogNewApp": {
+    "iRole": {
+      "home": {
+        "title": "I Roles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 I Role",
+        "createOrEditLabel": "创建或编辑 I Role",
+        "notFound": "No I Roles found"
+      },
+      "created": "I Role {{ param }} 创建成功",
+      "updated": "I Role {{ param }} 更新成功",
+      "deleted": "I Role {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 I Role {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "I Role"
+      },
+      "id": "ID",
+      "roleName": "Role Name",
+      "remark": "Remark",
+      "createTime": "Create Time",
+      "updateTime": "Update Time",
+      "createUserId": "Create User Id",
+      "updateUserId": "Update User Id",
+      "users": "Users",
+      "menus": "Menus",
+      "help": {
+        "roleName": "角色名",
+        "remark": "备注",
+        "createTime": "创建时间",
+        "updateTime": "修改时间",
+        "createUserId": "创建人id",
+        "updateUserId": "更新人id"
+      }
+    }
+  }
+}
